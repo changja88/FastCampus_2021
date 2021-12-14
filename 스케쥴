@@ -1,0 +1,35 @@
+
+
+1. 반복문 이후 고차함수 + 람다
+
+2. 클래스 이후에 에러 처리 강의
+//error
+try {
+
+} catch (e: Exception) {
+
+} finally {
+
+}
+
+
+3. 클래스 강의 이후 nullsafety 강의
+// 엘비스 연산자
+val text: String? = 'text'
+val nullText: String? = null
+val what: String? = text?.length ?: nullText
+
+
+fun foo(text: String): Int? {
+    val result = text?.length ?: return null
+}
+
+
+4.let/apply/with/also/run
+//https://medium.com/@limgyumin/%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%9D%98-apply-with-let-also-run-%EC%9D%80-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-4a517292df29
+val email: String? = ""
+email.let { }
+email?.let { }
+
+email.apply { }
+email?.apply { }

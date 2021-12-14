@@ -1,0 +1,60 @@
+배열
+- 특정 하나의 변수에 복수개의 값을 할당하고 싶은 경우
+var number :Int = 10 -> 10이라는 값이 number라는 변수에 할당이 된다
+var exam_scores :Int = 100, 98, 75
+- 배열은 저장될 수 있는 값의 갯수를 정해놓아야하고, 이 갯수는 변경 할수 없다
+
+
+1. 배열을 선언한는 방법 (1)
+- arryOf<자료형/생략>(값1, 값2, 값3) = 자료형ArrayOf(값1, 값2, 값3)
+    - 생략했을 경우 복수개의 자료형이 배열의 인자로 올수 있다 -> 자료형 -> non-null, nullable 모두 포함(Int, Int?)
+    - var array1 = arrayOf(true, false, "안녕하세요", 10, 2.2)
+- 자료형을 적어 줬을 경우, 해당 자료형만 인자로 들어올 수 있다
+    - var array2 = arrayOf<Int>(10,20,30)
+    - var array3 = arrayOf<Double>(2.2,4.5)
+- <자료형> ->를 대채할수 있는 방법
+    - var array4 = intArrayOf(1,2,3,4,5)
+    - var array5 = booleanArrayOf(true, false, true)
+
+2. 배열을 선언하는 방법 (2)
+- 자료형/생략Array(크기, {값 / 생략가능})
+    - var array6 = Array(10, {0}) -> 10칸짜리 배열을 만들고 기본값으로 0을 넣어준다
+- 자료형 명시
+    - var array7 = IntArray(10, {0})
+    - var array8 = DoubleArray(10, {0.0})
+    - var array9 = StringArray(10, {"Hi"}) -> 이건 불가능 -> 지금은 몰라도 된다 -> 사용하지 말자
+
+3. 배열을 선언하는 방법 (3)
+- Array<자료형/생략가능>(크기, {값/생략가능})
+    - var array10 = Array(10, {0}) -> 생략을 했을 경우에는 디폴트 값의 자료형으로 정해진다
+    - var array11 = Array<Int>(10, {0})
+    - var array12 = Array<String>(10, {"HI"})
+
+
+4. 배열에 값을 넣는 방법
+- 1번 방법 -> 배열명[index] = 값
+    - array12[2] = 100
+    - array12[0] = 1
+- 2번 방법 -> 배열명.set(index, 값)
+    - array12.set(2, 100)
+    - array12.set(0, 1)
+
+5. 배열에 있는 값을 가져오는 방법
+- 배열명[인덱스]
+    - val value = array12[3]
+- 배열명.get(인덱스)
+    - val value2 = array12.get(0)
+
+추가 Index
+- index는 0 부터 시작을 한다
+- 순서를 나타낸다
+- [0, 2, 100, ...]
+    - index0 : 0
+    - index1 : 2
+    - index2 : 100
+
+
+
+추가
+- 개발언어는 문법적인 요소만 있는 것이니라, 일반적이고 개발자가 많이 사용하는 기능들 기본적으로 포함하고,
+- 만약에, 내가 원하는 기능이 기본적으로 포함된 기능이 아니라라면, 만들어서 사용하거나, 그 기능 추가하면 된다(라이브러리)
