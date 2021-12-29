@@ -1,0 +1,60 @@
+속성(Property)
+class User7 {
+    val age: Int
+        get() {
+            본문
+        }
+        set(value:Int){
+            본문
+        }
+    val name: String
+
+    constructor(age: Int, name: String) {
+        this.age = age
+        this.name = name
+    }
+}
+-> 속성 : age, name
+val user = User7(20, "홍길동")
+-> println(user.age) -> 20출력 -> 코틀린이 getter를 호출 해준다
+user.age = 30 -> 30으로 할당 -> 코틀린이 setter를 호출 해준다
+User7.age = 60 -> 불가능하다
+
+
+1.getter/setter
+- getter : 클래스의 속성에 접근 할 때
+- setter : 클래스의 속성의 값을 설정 할 떄
+- 기본적으로 코틀린이 제공을 해주지만, 특별한 기능을 추가하고 싶을 경우에는 개발자가 직접 작성할 수 있다
+
+2.lateinit
+class User7 {
+    lateinit var age: Int
+    lateinit var name: String
+}
+
+- var로 선언한 프로퍼티에만 적용가능
+- 주 생성자에서는 사용할 수 없다
+- getter/setter 적용이 불가능
+- nullable 에는 적용이 불가능
+- 기초타입 프로퍼티에는 적용이 불가능
+    - 원시자료형(primitive type)
+    - String 을 제외한 우리가 흔히 알고 있는 자료형
+- isInitialized로 초기화 여부를 확인
+
+
+더블콜론 (::)
+- Reflaction 기능
+- 런타임에 프로그램의 구조를 조사 할 수 있는 기능
+- lateinit의 초기화 여부는 런타임이 아니면 알 수 없다
+
+lazy
+- 초기화를 미루고 미루고 미뤄서 정말로 필요한(접근할때) 순간에 초기화 하겠다
+- lazy선언된 변수는 선언이 될때, 혹은 init블록에서가 아니라 실제로 접근할때 초기화가 이루어진다
+
+class Computer{
+    val ram : Ram =
+
+}
+
+
+
