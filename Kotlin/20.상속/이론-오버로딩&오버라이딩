@@ -1,0 +1,59 @@
+
+오버라이딩(Overriding)
+- 슈퍼클래스가 사용하고 있는 멤버와 동일한 이름의 멤버를 만들수 없다
+    - 오버라이딩을 통해서 슈퍼클래스가 가지고 있는 함수를 재정의 할 수 있다
+    - 재정의를 할 때는 함수 맨 앞에 override 키워드를 적어 준다
+- 재정의
+    - 재선언과 동일하다
+    - 이전에 정의한 것을 번복하고 새롭게 정의하겠다
+        - 번복 -> 이전에 정의한 것은 작동하지 않는다
+    -> 이전것을 덮어쓴다
+
+open class Warrior1(var name: String, var power: Int, var type: String) {
+    fun attack() {
+        println("복잡한 코드 + 공격")
+    }
+}
+
+class DefenseWarrior1 constructor(name: String, power: Int) : Warrior1(name, power, "고블린") {
+    fun defense() {
+        println("방어")
+    }
+    fun attack(){
+        // 슈퍼클래와 동일한 이름을 가지고 있는 함수를 만들 수 없다
+    }
+    override fun attack(){
+        // override로 슈퍼 클래스가 가지고 있는 함수를 재정의 할 수 있다
+        println("간단한 코드 + 공격")
+    }
+}
+
+오버로딩(Overloading)
+- 동일한 이름의 함수를 복수개 만드는 것을 불가능하다
+    -> 복수개 있는 경우에 어떤걸 사용자가 사용하기를 원했는지 알 수 없기 때문
+fun sum(a : Int, b: Int):Int {return a+b}
+fun sum(a : Int, b: Int):Int {return a+b}
+
+sum(1,2)
+- 어떤걸 사용자가 사용하기를 원했는지 알 수 있다면 동일한 이름의 함수를 복수개 만들수 있다
+    - 함수가 받는 인자가 다른 경우
+        fun sum(a : Int, b: Int):Int {return a+b}
+        fun sum(a: Int):Int { return a + 10}
+
+        sum(10,20)
+        sum(10)
+    - 함수가 리턴하는 타입이 다른 경우 -> 오버로딩이 불가능하다
+        fun sum(a : Int, b: Int):Int {return a+b}
+        fun sum(a : Int, b: Int):String {return a+b}
+
+        val a : Int = sum(10,10)
+        val b : String = sum(20,20)
+
+
+
+
+
+
+
+
+

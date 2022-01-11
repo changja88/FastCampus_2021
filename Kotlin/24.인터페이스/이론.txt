@@ -1,0 +1,39 @@
+객체지향 프로그래밍
+- 클래스, 상속, 인터페이스
+
+인터페이스 (interface)
+interface Tiger{
+    var 줄무늬
+    fun bite()
+    fun goToBox()
+}
+-> 구현부가 없다
+
+- 규약(프로토콜)
+    - 인터페이스에 비어 있는 것을 채워주면 해당 인터페이스로 봐주겠다
+    - 비어 있는 것을 -> abstract
+    - 채워주면 -> 구현한다
+    - 인터페이스로 봐주겠다 -> Tiger 타입이다
+    -> 규약을 지켰다
+class BackDoSanTiger : Tiger, Bird{
+    var 줄무늬 = 검은색 줄무늬
+    fun bite(){ 이빨로 문다 }
+    fun goToBox(){ 큰 상자에 들어 간다 }
+
+    fun fly() {하늘을 날다}
+}
+
+- Interface
+    - 의사소통 창구
+    - 인터페이스를 보고 인터페이스를 구현한 클래스의 객체와 의사소통 할 수 있다
+        -> 이것을 가능하게 하기 위해서 생긴 특징이 규약이다
+    - 의사소통 할 수 있다 -> 사용이 가능하다
+    - val backDoSanTiger = BackDoSanTiger()
+    backDosanTiger.bite()
+    backDosanTiger.goToBox()
+
+
+- 협업
+- 확장
+    - 다중 구현이 가능 하다
+    - 비추천
