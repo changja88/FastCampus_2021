@@ -1,0 +1,4 @@
+xml activity에서 쓰는 방법
+1. kotlinx는 문제가 있어서 삭제가 되었다
+2. 데이터바인딩 방식을 사용한다
+    - https://hanyeop.tistory.com/170

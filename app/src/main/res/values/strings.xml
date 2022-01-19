@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FastCampus</string>
+    <string name="hello">안녕하세요</string>
 </resources>

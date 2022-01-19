@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/center"
+        android:layout_alignStart="@+id/center"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/center"
+        android:layout_toEndOf="@+id/center"
+        android:background="@color/purple_700" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/center"
+        android:layout_toRightOf="@+id/center"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:background="@color/purple_700" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:layout_alignStart="@+id/center"
+        android:background="@color/purple_700" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:layout_toRightOf="@+id/center"
+        android:background="@color/purple_700" />
+
+</RelativeLayout>

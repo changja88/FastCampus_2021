@@ -1,0 +1,17 @@
+Gravity(중력)
+- 속성
+- 속성이 부여된 뷰를 어떤 방향으로 끌어 당긴다
+- 종류
+    gravity -> Padding
+    - 속성을 부여하는 뷰와 그 안에 있는 뷰의 관계
+    layout_gravity -> Margin
+    - 속성을 부여하는 뷰와 그 외부에 있는 뷰의 관계
+- 값의 종류
+    - top, bottom, left, right, start, end
+    - center, center_vertical, center_horizontal
+    - clip_vertical, clip_horizontal
+        - 부모보다 큰 경우 잘라낸다
+    - fill, fill_vertical, fill_horizontal
+
+- 두가지 속성을 부여하는 방버
+    - gravity = "top|right"
