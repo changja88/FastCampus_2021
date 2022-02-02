@@ -8,11 +8,22 @@
         <entry key="app/src/main/res/drawable/drawable_1.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/drawable_2.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.6039654295882054" />
+        <entry key="app/src/main/res/drawable/number_bg.xml" value="0.61875" />
         <entry key="app/src/main/res/drawable/test.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/test1.xml" value="0.29907407407407405" />
         <entry key="app/src/main/res/drawable/yellow_background.xml" value="0.42407407407407405" />
+        <entry key="app/src/main/res/layout/activity_01.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/activity_homework1.xml" value="0.3463541666666667" />
+        <entry key="app/src/main/res/layout/activity_homework2.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_intent_one.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/activity_intent_two.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_test.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/activity_one.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_test2.xml" value="0.34375" />
+        <entry key="app/src/main/res/layout/activity_three.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_two.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_view_control02.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/chain.xml" value="0.1" />
         <entry key="app/src/main/res/layout/constrainlayout_3.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/constraintlayout_06.xml" value="0.59375" />

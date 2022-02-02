@@ -3,18 +3,14 @@ package com.example.fastcampus
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
 
-
-class MainActivity : AppCompatActivity() {
-
+class Activity_01 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_01)
 
-        setContentView(R.layout.activity_main)
-        // 한번만 하면 되는 작업
         Log.d("LifeCycle", "onCreate")
+
     }
 
     override fun onResume() {
@@ -48,7 +44,3 @@ class MainActivity : AppCompatActivity() {
         super.onRestart()
     }
 }
-
-
-
-

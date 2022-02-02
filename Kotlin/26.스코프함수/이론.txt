@@ -1,0 +1,15 @@
+스코프함수(Scope Function)
+- 동작의 원리는 모르더라도, 언제 사용면 좋은지 알고 사용해도 가치가 있다
+- { 본문 }
+val name = "홍길동"
+val victor = Person().apply{
+    it.name = "victor"
+    age = 20
+}
+apply, also, run(with) / let
+
+apply / also -> 처리가 끝나면 (스코프 끝) 인스턴스(객체)를 반환한다
+run(with) / let -> 처리가 끝나면 최종값을 반환한다
+
+apply / run(with) -> this 스코프 밖에 있는 변수 이름과 혼동할 수 있다
+also / let -> it 스코프 밖에 있는 변수 이름과 혼동을 방지한다

@@ -1,4 +1,16 @@
-xml activity에서 쓰는 방법
-1. kotlinx는 문제가 있어서 삭제가 되었다
-2. 데이터바인딩 방식을 사용한다
-    - https://hanyeop.tistory.com/170
+FLAG_ACTIVITY_NO_HISTORY
+- 히스토리에 존재 하지 않도록 (로딩)
+
+FLAG_ACTIVITY_REORDER_TO_FRONT
+- 엑티비티가 스택에 존재할 경우 최상위로 올려준다
+- ABC -> B호출 -> ACB
+
+FLAG_ACTIVITY_CLEAR_TOP
+- 호출하는 스택에 존재할 경우 해당 엑티비티를 최사위로 올리면서
+  그위에 존재하던 엑티비티들은 모두 삭제한다
+- ABC -> A 호출 -> A
+
+FLAG_ACTIVITY_NO_ANIMATION
+
+setFalg 기존것을 삭제하고
+addFlag 새로운 플레그 추가

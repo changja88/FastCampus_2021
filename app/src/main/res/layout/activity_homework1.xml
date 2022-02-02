@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TestActivity">
+    tools:context=".Homework_1">
 
 
     <TextView
@@ -15,11 +15,11 @@
         android:layout_weight="1"
         android:background="@color/black"
         android:gravity="right|bottom"
-        android:padding="10dp"
+        android:padding="5dp"
         android:text="0"
         android:textColor="@color/white"
-        android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textSize="60dp" />
+
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -32,53 +32,50 @@
             android:id="@+id/one"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="1"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/two"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="2"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/three"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="3"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/ca"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="CA"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -93,53 +90,50 @@
             android:id="@+id/four"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="4"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/five"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="5"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/six"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="6"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/plus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="+"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -154,53 +148,50 @@
             android:id="@+id/seven"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="7"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/eight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="8"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/nine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="9"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
 
         <TextView
             android:id="@+id/zero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:background="@drawable/test"
+            android:background="@drawable/number_bg"
             android:gravity="center"
             android:text="0"
             android:textColor="@color/black"
-            android:textSize="60dp"
-            android:textStyle="bold" />
+            android:textSize="60dp" />
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -208,10 +199,10 @@
         android:id="@+id/equal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="1dp"
         android:layout_weight="1"
-        android:background="@drawable/test"
+        android:background="@drawable/number_bg"
         android:gravity="center"
+        android:padding="5dp"
         android:text="="
         android:textColor="@color/black"
         android:textSize="60dp"
