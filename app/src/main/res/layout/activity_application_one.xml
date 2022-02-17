@@ -5,17 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TestActivity">
+    tools:context=".ApplicationActivityOne">
 
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+    <TextView
+        android:id="@+id/changeActivity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="100dp"
+        android:text="change activity"
+        android:gravity="center"
+        android:textSize="40dp"/>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/pager"
+
+    <TextView
+        android:id="@+id/testMethod"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="100dp"
+        android:text="testMethod"
+        android:gravity="center"
+        android:textSize="40dp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

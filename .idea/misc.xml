@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.5333333333333333" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/blue_background.xml" value="0.42407407407407405" />
         <entry key="app/src/main/res/drawable/drawable_1.xml" value="0.6039654295882054" />
@@ -13,18 +14,39 @@
         <entry key="app/src/main/res/drawable/test1.xml" value="0.29907407407407405" />
         <entry key="app/src/main/res/drawable/yellow_background.xml" value="0.42407407407407405" />
         <entry key="app/src/main/res/layout/activity_01.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/activity_add_view.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_application_one.xml" value="0.2630208333333333" />
+        <entry key="app/src/main/res/layout/activity_application_two.xml" value="0.4882246376811594" />
+        <entry key="app/src/main/res/layout/activity_async.xml" value="0.5036458333333333" />
+        <entry key="app/src/main/res/layout/activity_fragment.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_glide.xml" value="0.4882246376811594" />
         <entry key="app/src/main/res/layout/activity_homework1.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/layout/activity_homework2.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_intent_one.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/activity_intent_two.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/activity_list_view.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_phone_book.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_phone_book_detail.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_recycler_view_homework.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_resource.xml" value="0.4882246376811594" />
+        <entry key="app/src/main/res/layout/activity_room.xml" value="0.47146739130434784" />
+        <entry key="app/src/main/res/layout/activity_shared_preference.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_tablayout_pager.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_tablayout_pager_new.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_tablayout_pager_simple.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test2.xml" value="0.34375" />
+        <entry key="app/src/main/res/layout/activity_thread.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_three.xml" value="0.48854166666666665" />
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.48854166666666665" />
         <entry key="app/src/main/res/layout/activity_view_control02.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/car_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/chain.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/chatitem_left.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/chatitem_right.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/constrainlayout_3.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/constraintlayout_06.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/constraintlayout_1.xml" value="0.59375" />
@@ -37,6 +59,7 @@
         <entry key="app/src/main/res/layout/constraintlayout_homework2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/constratinlayout_2.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/drawable.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/first_fragment.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/framelayout.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/gravity.xml" value="0.6601042269832079" />
         <entry key="app/src/main/res/layout/homework_1.xml" value="0.5" />
@@ -44,6 +67,8 @@
         <entry key="app/src/main/res/layout/linearlayout_05.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/linearlayout_homework.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/margin_padding.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/one_fragment.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/phonebook_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/relativelayout.xml" value="0.34375" />
         <entry key="app/src/main/res/layout/relativelayout_2.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/relativelayout_homework1.xml" value="0.59375" />
@@ -53,6 +78,8 @@
         <entry key="app/src/main/res/layout/size.xml" value="0.1" />
         <entry key="app/src/main/res/layout/test.xml" value="0.33" />
         <entry key="app/src/main/res/layout/test2.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/test_left.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/test_right.xml" value="0.25" />
         <entry key="app/src/main/res/layout/weight.xml" value="0.22" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.6039654295882054" />

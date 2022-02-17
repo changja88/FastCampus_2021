@@ -1,0 +1,13 @@
+TabLayout & Pager
+- 둘이 같이 사용되는 경우가 많다
+
+Pager
+- 종이 넘기 듯이 화면을 전환시켜준다
+Tablayout
+- tab을 담당하는 역할
+
+Adapter
+- pager와 tablayout을 연결시켜주는 역할
+
+안드로이드는 1년마다
+우리만든앱 존속이 10년째

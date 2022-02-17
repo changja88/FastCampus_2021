@@ -1,16 +1,13 @@
-FLAG_ACTIVITY_NO_HISTORY
-- 히스토리에 존재 하지 않도록 (로딩)
+네트워크
+- 두대 이상의 컴퓨터를 연결 하는 것
 
-FLAG_ACTIVITY_REORDER_TO_FRONT
-- 엑티비티가 스택에 존재할 경우 최상위로 올려준다
-- ABC -> B호출 -> ACB
 
-FLAG_ACTIVITY_CLEAR_TOP
-- 호출하는 스택에 존재할 경우 해당 엑티비티를 최사위로 올리면서
-  그위에 존재하던 엑티비티들은 모두 삭제한다
-- ABC -> A 호출 -> A
 
-FLAG_ACTIVITY_NO_ANIMATION
 
-setFalg 기존것을 삭제하고
-addFlag 새로운 플레그 추가
+
+
+네트워크가 필요 하지않은 경우
+- 로컬(휴대폰에 있는)데이터만 이용하는 경우
+
+네트워크가 필요 한 경우
+- 사용자

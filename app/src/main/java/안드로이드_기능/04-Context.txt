@@ -1,9 +1,11 @@
 Context(문맥 - 앱의 흐름)
 Application Context
 - 하나만 존재
+- 애플리케이션이 살아 있는 동안 유지
 
 Activity Context
 - Activity마다 존재
+- 액티티비가 유지되는 동안에만 유지
 - Context를 구현하고 기능을 추가한게 -> Activity
 
 

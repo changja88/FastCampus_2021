@@ -5,37 +5,87 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MasterApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FastCampus">
-
-
         <activity
-            android:name=".Homework_2"
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TablayoutPagerSimpleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TablayoutPagerNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TablayoutPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewHomework"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name= "android.intent.action.VIEW"/>
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhoneBookDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneBookActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GlideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResourceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ApplicationActivityTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationActivityOne"
+            android:exported="true" />
+        <activity
+            android:name=".AsyncActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThreadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FragmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddViewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
                     android:host="*"
-                    android:scheme="http"/>
-
+                    android:scheme="http" />
             </intent-filter>
         </activity>
-
-
-
-        <activity
-            android:name=".TestActivity2"
-            android:exported="true"/>
         <activity
             android:name=".ActivityThree"
             android:exported="false" />
@@ -49,7 +99,7 @@
             android:name=".Intent_Two"
             android:exported="false" />
         <activity
-            android:name=".TestActivity"
+            android:name=".Homework_2"
             android:exported="false" />
         <activity
             android:name=".Homework_1"
@@ -65,13 +115,7 @@
             android:exported="false" />
         <activity
             android:name=".ActivityOne"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

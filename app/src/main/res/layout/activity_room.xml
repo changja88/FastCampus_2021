@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoomActivity">
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/blue_background"
+        android:gravity="center"
+        android:text="SAVE" />
+
+    <TextView
+        android:id="@+id/load"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/blue_background"
+        android:gravity="center"
+        android:text="LOAD" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/blue_background"
+        android:gravity="center"
+        android:text="DELETE" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
