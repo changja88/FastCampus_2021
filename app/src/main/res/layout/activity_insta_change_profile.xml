@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".InstaChangeProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/btn_outsta_my" />
+
+    <TextView
+        android:id="@+id/change_img"
+        android:layout_width="144dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/insta_login"
+        android:gravity="center"
+        android:text="완료"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

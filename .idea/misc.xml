@@ -9,9 +9,12 @@
         <entry key="app/src/main/res/drawable/drawable_1.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/drawable_2.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.6039654295882054" />
+        <entry key="app/src/main/res/drawable/insta_input_bg.xml" value="0.5354166666666667" />
+        <entry key="app/src/main/res/drawable/insta_login.xml" value="0.5354166666666667" />
         <entry key="app/src/main/res/drawable/number_bg.xml" value="0.61875" />
         <entry key="app/src/main/res/drawable/test.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/drawable/test1.xml" value="0.29907407407407405" />
+        <entry key="app/src/main/res/drawable/todo_bg.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/yellow_background.xml" value="0.42407407407407405" />
         <entry key="app/src/main/res/layout/activity_01.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/activity_add_view.xml" value="0.5104166666666666" />
@@ -22,16 +25,28 @@
         <entry key="app/src/main/res/layout/activity_glide.xml" value="0.4882246376811594" />
         <entry key="app/src/main/res/layout/activity_homework1.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/layout/activity_homework2.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_insta_change_profile.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_insta_join.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_insta_login.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_insta_main.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_insta_splash.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_instagram_join.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_intent_one.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/activity_intent_two.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/activity_list_view.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_melon.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_melon_detail.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_network.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_permisiion.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_permission.xml" value="0.24610748367654445" />
         <entry key="app/src/main/res/layout/activity_phone_book.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_phone_book_detail.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_recycler_view_homework.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_resource.xml" value="0.4882246376811594" />
+        <entry key="app/src/main/res/layout/activity_retrofit.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_room.xml" value="0.47146739130434784" />
         <entry key="app/src/main/res/layout/activity_shared_preference.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_tablayout_pager.xml" value="0.5104166666666666" />
@@ -41,8 +56,12 @@
         <entry key="app/src/main/res/layout/activity_test2.xml" value="0.34375" />
         <entry key="app/src/main/res/layout/activity_thread.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/activity_three.xml" value="0.48854166666666665" />
+        <entry key="app/src/main/res/layout/activity_to_do_write.xml" value="0.49094202898550726" />
+        <entry key="app/src/main/res/layout/activity_to_doactivity.xml" value="0.49094202898550726" />
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.48854166666666665" />
         <entry key="app/src/main/res/layout/activity_view_control02.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/activity_youtube.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/activity_youtube_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/car_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/chain.xml" value="0.1" />
         <entry key="app/src/main/res/layout/chatitem_left.xml" value="0.5104166666666666" />
@@ -63,12 +82,17 @@
         <entry key="app/src/main/res/layout/framelayout.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/gravity.xml" value="0.6601042269832079" />
         <entry key="app/src/main/res/layout/homework_1.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/insta_feed_fragment.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/insta_post_fragment.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/insta_profile_fragment.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/linearlayout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/linearlayout_05.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/linearlayout_homework.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/margin_padding.xml" value="0.59375" />
+        <entry key="app/src/main/res/layout/melon_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/one_fragment.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/phonebook_item.xml" value="0.5104166666666666" />
+        <entry key="app/src/main/res/layout/post_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/relativelayout.xml" value="0.34375" />
         <entry key="app/src/main/res/layout/relativelayout_2.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/relativelayout_homework1.xml" value="0.59375" />
@@ -76,11 +100,15 @@
         <entry key="app/src/main/res/layout/resource.xml" value="0.9" />
         <entry key="app/src/main/res/layout/scrollview.xml" value="0.59375" />
         <entry key="app/src/main/res/layout/size.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/student_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/layout/test.xml" value="0.33" />
         <entry key="app/src/main/res/layout/test2.xml" value="0.67" />
         <entry key="app/src/main/res/layout/test_left.xml" value="0.25" />
         <entry key="app/src/main/res/layout/test_right.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/todo_content.xml" value="0.4855072463768116" />
+        <entry key="app/src/main/res/layout/todo_date.xml" value="0.4855072463768116" />
         <entry key="app/src/main/res/layout/weight.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/youtube_item.xml" value="0.5104166666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.6039654295882054" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.6039654295882054" />
       </map>

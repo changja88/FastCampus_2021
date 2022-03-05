@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@integer/material_motion_duration_long_1"
+        android:gravity="center"
+        android:text="adfadfasdd"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="20dp"
+        android:src="@drawable/play" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

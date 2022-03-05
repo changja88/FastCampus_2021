@@ -20,7 +20,7 @@ class SharedPreferenceActivity : AppCompatActivity() {
             // MODE_WORLD_READBLE: 다른 앱에서도 사용가능 (읽기만 가능)
             // MODE_WORLD_WRITABLE: 다른 앱에서도 사용가능 (읽기, 쓰기 가능)
             // MODE_MULTI_PROCESS: 이미 호출되어 사용중인지 체크
-            // MODE_APPEND : 기존 preference에 신규로 추가
+            // MODE_APPEND : 기존 preference에 신규로 추 e가
             val editor: SharedPreferences.Editor = sharedPreferences.edit()
             editor.putString("key1", "hello One") // key-value방식으로 데이터를 저장
             editor.putString("key2", "hello Two") // key-value방식으로 데이터를 저장

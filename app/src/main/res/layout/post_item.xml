@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="23dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/owner_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/btn_outsta_my" />
+
+        <TextView
+            android:id="@+id/owner_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1d1d1d"
+            android:textSize="20dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/post_img"
+            android:layout_width="match_parent"
+            android:layout_height="412dp" />
+
+        <ImageView
+            android:id="@+id/post_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="@color/white"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/post_heart"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_like"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:paddingRight="16dp"
+        android:textColor="#1d1d1d"
+        android:textSize="16dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

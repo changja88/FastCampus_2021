@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".YoutubeItemActivity">
+
+
+    <VideoView
+        android:id="@+id/youtube_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

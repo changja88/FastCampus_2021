@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MelonActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="재생 목록"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/black"
+        android:padding="10dp"
+        android:id="@+id/melon_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -3,10 +3,12 @@ package com.example.fastcampus
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.database.Cursor
 import android.net.Uri
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.FileUtils
 import android.util.Log
 
 import androidx.fragment.app.Fragment
@@ -26,96 +28,91 @@ import org.w3c.dom.Text
 import androidx.room.RoomDatabase
 
 import androidx.room.Database
-
-
-@Dao
-interface UserDao {
-    @Query("SELECT * FROM user")
-    fun getAll(): List<User>
-
-    @Query("SELECT * FROM user WHERE uid IN (:userIds)")
-    fun loadAllByIds(userIds: IntArray): List<User>
-
-    @Query(
-        "SELECT * FROM user WHERE first_name LIKE :first AND " +
-                "last_name LIKE :last LIMIT 1"
-    )
-    fun findByName(first: String, last: String): User
-
-    @Insert
-    fun insertAll(vararg users: User)
-
-    @Insert(onConflict = REPLACE)
-    fun insert(user: User)
-//
-//    @Query("DELETE FROM Contact WHERE id = :contact_id")
-//        fun delete(user: User)
-}
-
-@Entity
-data class User(
-    @PrimaryKey val uid: Int,
-    @ColumnInfo(name = "first_name") val firstName: String?,
-    @ColumnInfo(name = "last_name") val lastName: String?
-)
-
-@Database(entities = [User::class], version = 1)
-abstract class AppDatabase : RoomDatabase() {
-    abstract fun userDao(): UserDao
-}
-
-//@Database(entities = [User::class], version = 1)
-//abstract class UserDatabase : RoomDatabase() {
-//    abstract fun userDao(): UserDao
-//
-//    companion object {
-//        private var INSTANCE: UserDatabase? = null
-//        fun getInstance(context: Context): UserDatabase? {
-//            if (INSTANCE == null) {
-//                synchronized(UserDatabase::class) {
-//                    INSTANCE = Room.databaseBuilder(
-//                        context.applicationContext,
-//                        UserDatabase::class.java, "user_table.db"
-//                    ).fallbackToDestructiveMigration().build()
-//                }
-//            }
-//            return INSTANCE
-//        }
-//    }
-//
-//    fun destryInstance() {
-//        INSTANCE = null
-//    }
-//}
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.net.HttpURLConnection
+import java.net.URL
+import android.provider.MediaStore
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import java.io.File
+import androidx.core.app.ActivityCompat.startActivityForResult
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.http.*
 
 class TestActivity : AppCompatActivity() {
+
+    var fileUri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
-
-//        val userDatabase: UserDatabase =
-//            Room.databaseBuilder(this, UserDatabase::class.java, "user_table").build()
-
-        val db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java, "database-name"
-        ).allowMainThreadQueries().build()
-        // insert
-        val user: User = User(1, "홍길동", "주소")
-        db.userDao().insert(user)
-
-        // Read
-        val a = db.userDao().getAll()
-        Log.d("testt", "" + a)
-
     }
 }
-//@Entity(tableName = "employments")
-//data class Employment(
-//    @PrimaryKey(autoGenerate = true) val id: Long,
-//    @ColumnInfo(name = "code") val code: String,
-//    @ColumnInfo(name = "title") val name: String
-//){
-//    constructor(code: String, name: String) : this(0, code, name)
+
+
+
+//class ToDoListRecylcerViewAdapter(
+//    val todoList: ArrayList<ToDo>,
+//    val inflater: LayoutInflater
+//) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+//    var previouseDate: String = ""
+//
+//    inner class DateViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+//        val dateTextView: TextView
+//
+//        init {
+//            dateTextView = itemView.findViewById(R.id.date)
+//        }
+//
+//    }
+//
+//    inner class ContentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+//        val isComplete: ImageView
+//        val content: TextView
+//
+//        init {
+//            isComplete = itemView.findViewById(R.id.is_complete)
+//            content = itemView.findViewById(R.id.content)
+//        }
+//    }
+//
+//    override fun getItemViewType(position: Int): Int {
+//        if (previouseDate == todoList.get(position).created) {
+//            return 0
+//        } else {
+//            previouseDate = todoList.get(position).created
+//            return 1
+//        }
+//    }
+//
+//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+//        when (viewType) {
+//            1 -> return DateViewHolder(inflater.inflate(R.layout.todo_date, parent, false))
+//            else -> return ContentViewHolder(inflater.inflate(R.layout.todo_content, parent, false))
+//        }
+//    }
+//
+//    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+//        val todo = todoList.get(position)
+//        if (holder is DateViewHolder) {
+//            (holder as DateViewHolder).dateTextView.text = todo.created
+//        } else {
+//            (holder as ContentViewHolder).content.text = todo.content
+//        }
+//    }
+//
+//    override fun getItemCount(): Int {
+//        return todoList.size
+//    }
 //}

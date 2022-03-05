@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical"
+    tools:context=".ToDoWriteActivity">
+
+    <EditText
+        android:id="@+id/content_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/todo_bg" />
+
+    <TextView
+        android:id="@+id/make_todo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/insta_login"
+        android:gravity="center"
+        android:text="만들기"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

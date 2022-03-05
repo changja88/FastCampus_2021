@@ -8,6 +8,9 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 
+
+
+
 class TablayoutPagerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +23,7 @@ class TablayoutPagerActivity : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("1번째"))
         tabLayout.addTab(tabLayout.newTab().setText("2번째"))
         tabLayout.addTab(tabLayout.newTab().setText("3번째"))
+
 
         // Pager에 adapter를 장착하는 방법
         viewPager.adapter = FragmentPagerAdapter(supportFragmentManager, 3)
