@@ -37,6 +37,9 @@
             android:exported="false" />
         <activity
             android:name=".ToDoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Intent_One"
             android:exported="true"
             >
             <intent-filter>
@@ -144,9 +147,7 @@
         <activity
             android:name=".ActivityTwo"
             android:exported="false" />
-        <activity
-            android:name=".Intent_One"
-            android:exported="false" />
+
         <activity
             android:name=".Intent_Two"
             android:exported="false" />
