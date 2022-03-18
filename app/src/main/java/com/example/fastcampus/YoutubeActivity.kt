@@ -24,75 +24,92 @@ class YoutubeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_youtube)
 
+
         val retrofit = Retrofit.Builder()
             .baseUrl("http://mellowcode.org/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val retrofitService = retrofit.create(RetrofitService::class.java)
 
-        retrofitService.getYoutubeItemList().enqueue(object : Callback<ArrayList<YoutubeItem>> {
+        retrofitService.getYoutubeItemList().enqueue(object:Callback<ArrayList<YoutubeItem>>{
             override fun onResponse(
                 call: Call<ArrayList<YoutubeItem>>,
                 response: Response<ArrayList<YoutubeItem>>
             ) {
-                if (response.isSuccessful) {
-                    val youtubeItemList = response.body()
-                    val glide = Glide.with(this@YoutubeActivity)
-                    val adapter = YoutubeListAdapter(
-                        youtubeItemList!!,
-                        LayoutInflater.from(this@YoutubeActivity),
-                        glide,
-                        this@YoutubeActivity
-                    )
-                    findViewById<RecyclerView>(R.id.youbue_recycler_view).adapter = adapter
-                }
+                val youtubeItemList = response.body()
+                val glide = Glide.with(this@YoutubeActivity)
+                val adapter = YoutubeListAdapter(
+                    youtubeItemList!!,
+                    LayoutInflater.from(this@YoutubeActivity),
+                    glide,
+                    this@YoutubeActivity
+                )
+                findViewById<RecyclerView>(R.id.youtube_recycler).adapter = adapter
             }
 
             override fun onFailure(call: Call<ArrayList<YoutubeItem>>, t: Throwable) {
-                Log.d("youtube", "network fail")
+                Log.d("youyou", "fail" + t.message)
             }
         })
     }
 }
 
 class YoutubeListAdapter(
-    val youtubeItemList: ArrayList<YoutubeItem>,
-    val inflater: LayoutInflater,
-    val glide: RequestManager,
-    val context: Context
-) : RecyclerView.Adapter<YoutubeListAdapter.ViewHolder>() {
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    val youtubeItemList : ArrayList<YoutubeItem>,
+    val inflater : LayoutInflater,
+    val glide : RequestManager,
+    val context : Context
+): RecyclerView.Adapter<YoutubeListAdapter.ViewHolder>(){
 
-        val title: TextView
-        val thumbnail: ImageView
-        val content: TextView
+    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+        val title : TextView
+        val thumbnail : ImageView
+        val content : TextView
 
         init {
-            title = itemView.findViewById(R.id.title)
+            title= itemView.findViewById(R.id.title)
             thumbnail = itemView.findViewById(R.id.thumbnail)
             content = itemView.findViewById(R.id.content)
 
             itemView.setOnClickListener {
-                val position: Int = adapterPosition
                 val intent = Intent(context, YoutubeItemActivity::class.java)
-                intent.putExtra("video_url", youtubeItemList.get(position).video)
+                intent.putExtra("video_url", youtubeItemList.get(adapterPosition).video)
                 context.startActivity(intent)
             }
+
         }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = inflater.inflate(R.layout.youtube_item, parent, false)
+        val view = inflater.inflate(R.layout.youtube_list_item, parent, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.title.text = youtubeItemList.get(position).title
         holder.content.text = youtubeItemList.get(position).content
-        glide.load(youtubeItemList.get(position).thumbnail).centerCrop().into(holder.thumbnail)
+        glide.load((youtubeItemList.get(position).thumbnail)).centerCrop().into(holder.thumbnail)
     }
 
     override fun getItemCount(): Int {
         return youtubeItemList.size
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

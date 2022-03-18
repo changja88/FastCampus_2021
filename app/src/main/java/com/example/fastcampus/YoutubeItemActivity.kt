@@ -10,18 +10,22 @@ class YoutubeItemActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_youtube_item)
 
+
         val videoUrl = intent.getStringExtra("video_url")
 
-        val mediaContorller = MediaController(this)
+        val mediaController = MediaController(this)
+
         findViewById<VideoView>(R.id.youtube_video_view).apply {
             this.setVideoPath(videoUrl)
             this.requestFocus()
             this.start()
-            mediaContorller.show()
+            mediaController.show()
         }
     }
-}
 
-// Exoplayer
-// - drm : 온라인 저작권
-// - straming
+    // Exoplayer
+    // - 기능이 다양함
+    // - 사용이 쉽다
+    // - DRM
+    // - Streaming
+}

@@ -19,7 +19,15 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".YoutubeItemActivity"
+            android:screenOrientation="landscape"
+            android:exported="true" />
+        <activity
+            android:name=".Intent_One"
+            android:exported="false" />
         <activity
             android:name=".ToDoWriteActivity"
             android:exported="false" />
@@ -39,9 +47,8 @@
             android:name=".ToDoActivity"
             android:exported="false" />
         <activity
-            android:name=".Intent_One"
-            android:exported="true"
-            >
+            android:name=".YoutubeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,13 +67,6 @@
         <activity
             android:name=".MelonActivity"
             android:exported="false" />
-        <activity
-            android:name=".YoutubeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".YoutubeItemActivity"
-            android:exported="false"
-            android:screenOrientation="landscape" />
         <activity
             android:name=".RetrofitActivity"
             android:exported="false" />
@@ -147,7 +147,6 @@
         <activity
             android:name=".ActivityTwo"
             android:exported="false" />
-
         <activity
             android:name=".Intent_Two"
             android:exported="false" />

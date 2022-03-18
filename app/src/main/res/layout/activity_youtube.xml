@@ -9,32 +9,37 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:background="@color/black"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginRight="16dp"
-            android:src="@drawable/youtube_logo" />
+            android:src="@drawable/youtube_logo"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Youtube"
             android:textColor="@color/white"
-            android:textSize="24dp" />
+            android:textSize="24dp"/>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/youbue_recycler_view"
+        android:id="@+id/youtube_recycler"
+        android:padding="12dp"
+        android:background="#272727"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
